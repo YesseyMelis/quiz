@@ -1,0 +1,21 @@
+Pillow==7.0.0  # https://github.com/python-pillow/Pillow
+sqlparse==0.3.1
+python-dateutil==1.5
+djangorestframework==3.11.0
+psycopg2==2.8.3
+
+#Django
+#-------------------------------------
+django==2.2.10
+django-environ==0.4.5  # https://github.com/joke2k/django-environ
+django-model-utils==4.1.1  # https://github.com/jazzband/django-model-utils
+django-filter==2.2.0  # https://github.com/carltongibson/django-filter
+django-extensions==3.0.0 # https://github.com/django-extensions/django-extensions
+dj-database-url==0.5.0
+ipython==7.23.1
+drf-yasg==1.17.0
+django-rest-swagger==2.2.0
+drf-spectacular==0.16.0
+djangorestframework-simplejwt==4.6.0
+PyJWT==2.0.1
+django-cors-headers==3.7.0

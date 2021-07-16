@@ -1,0 +1,10 @@
+class QuestionTypes:
+    TEXT = 'TEXT'
+    SINGLE_VARIANT = 'SINGLE_VARIANT'
+    MULTIPLE_VARIANT = 'MULTIPLE_VARIANT'
+
+    choices = (
+        (TEXT, TEXT),
+        (SINGLE_VARIANT, SINGLE_VARIANT),
+        (MULTIPLE_VARIANT, MULTIPLE_VARIANT)
+    )
