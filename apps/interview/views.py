@@ -52,8 +52,14 @@ class SubmitQuizView(generics.CreateAPIView):
         return Response({'user_quiz': instance.pk}, status=status.HTTP_201_CREATED)
 
 
-class GetSubmittedUserQuizView(generics.RetrieveAPIView):
+class GetSubmittedUserQuizView(generics.ListAPIView):
     serializer_class = UserQuizSerializer
     queryset = UserQuiz.objects.all()
     permission_classes = (AllowAny,)
     lookup_field = 'user_ident'
+
+    def list(self, request, *args, **kwargs):
+        user_ident = kwargs.get(self.lookup_field, None)
+        queryset = self.get_queryset().filter(user_ident=user_ident)
+        serializer = self.serializer_class(queryset, many=True)
+        return Response(serializer.data)

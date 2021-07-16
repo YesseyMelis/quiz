@@ -112,5 +112,6 @@ class UserQuizSerializer(serializers.ModelSerializer):
         fields = (
             'quiz',
             'user',
-            'answers'
+            'answers',
+            'user_ident'
         )
