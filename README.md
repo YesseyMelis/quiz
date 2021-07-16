@@ -10,6 +10,4 @@ docker-compose up
 Docker settings
 ---------------
 
-Moved to settings_.
-
-.. _settings: https://docs.docker.com/compose/install/
+Moved to [settings](https://docs.docker.com/compose/install/)
