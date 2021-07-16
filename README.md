@@ -11,3 +11,10 @@ Docker settings
 ---------------
 
 Moved to [settings](https://docs.docker.com/compose/install/)
+
+Create superuser
+-----------------
+```
+docker-compose run django bash
+./manage.py createsuperuser
+```
